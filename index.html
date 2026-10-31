@@ -3,26 +3,104 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>bordemin</title>
+<title>bordemin — building in Wardogs</title>
+<meta name="description" content="bordemin makes gaming videos about building: bases, forts and defences in Wardogs, with the squad. Long-form guides on YouTube, shorts everywhere.">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:title" content="bordemin">
+<meta property="og:description" content="Gaming videos about building, mostly Wardogs.">
+<meta property="og:image" content="https://bordemin.github.io/icon-512.png">
 <style>
-  body { font-family: -apple-system, Segoe UI, Helvetica, Arial, sans-serif; max-width: 640px; margin: 48px auto; padding: 0 20px; line-height: 1.6; color: #eee; background: #14141c; }
-  a { color: #00B1E9; }
-  h1 { font-size: 1.8rem; }
-  nav a { margin-right: 18px; }
+  :root { --bg: #14141c; --card: #1d1d28; --text: #eee; --muted: #a8a8b8; --cyan: #00B1E9; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: -apple-system, Segoe UI, Helvetica, Arial, sans-serif; line-height: 1.6; color: var(--text); background: var(--bg); }
+  a { color: var(--cyan); }
+  .wrap { max-width: 900px; margin: 0 auto; padding: 0 16px; }
+  header { padding: 40px 0 24px; display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+  header img { width: 96px; height: 96px; border-radius: 50%; box-shadow: 0 0 24px rgba(224,64,200,.45); }
+  header h1 { margin: 0; font-size: 2.2rem; }
+  header p { margin: 4px 0 0; color: var(--muted); }
+  nav.top a { margin-right: 18px; font-weight: 600; text-decoration: none; }
+  section { padding: 24px 0; border-top: 1px solid #2a2a38; }
+  h2 { font-size: 1.4rem; margin: 0 0 12px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
+  .video { background: var(--card); border-radius: 10px; overflow: hidden; text-decoration: none; color: var(--text); display: block; }
+  .video img { width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block; }
+  .video span { display: block; padding: 10px 12px 12px; font-weight: 600; }
+  .links { display: flex; flex-wrap: wrap; gap: 10px; }
+  .links a { background: var(--card); padding: 8px 14px; border-radius: 999px; text-decoration: none; font-weight: 600; }
+  footer { padding: 24px 0 48px; color: var(--muted); font-size: .9rem; border-top: 1px solid #2a2a38; }
+  footer a { margin-right: 16px; }
 </style>
 </head>
 <body>
-<h1>bordemin</h1>
-<p>Gaming videos and shorts. Wardogs, sim racing, whatever the squad is playing.</p>
-<nav>
-  <a href="https://www.youtube.com/@bordemin">YouTube</a>
-  <a href="https://www.twitch.tv/bordemin">Twitch</a>
-  <a href="https://discord.gg/dn6hHyYqJu">Discord</a>
+<div class="wrap">
+
+<header>
+  <img src="favicon-192.png" alt="bordemin logo: a neon B in a pink ring">
+  <div>
+    <h1>bordemin</h1>
+    <p>Gaming videos about building. Right now: bases, forts and defences in Wardogs, with the squad.</p>
+  </div>
+</header>
+
+<nav class="top">
+  <a href="#videos">Videos</a>
+  <a href="#about">About</a>
+  <a href="#follow">Follow</a>
+  <a href="#tool">The posting tool</a>
 </nav>
-<p>This site also hosts the pages for the small tool that posts my own videos to my own accounts.</p>
-<nav>
+
+<section id="videos">
+  <h2>Latest videos</h2>
+  <div class="grid">
+    <a class="video" href="https://www.youtube.com/watch?v=v6C7gHXlczE"><img src="https://i.ytimg.com/vi/v6C7gHXlczE/hqdefault.jpg" alt="" loading="lazy"><span>How to Build an Entrance to Your FOB in Wardogs (the Meat Grinder)</span></a>
+    <a class="video" href="https://www.youtube.com/watch?v=0vXLoy2tzQI"><img src="https://i.ytimg.com/vi/0vXLoy2tzQI/hqdefault.jpg" alt="" loading="lazy"><span>7 Wall Tricks Every Builder Needs in Wardogs</span></a>
+    <a class="video" href="https://www.youtube.com/watch?v=g_qPQNGcshU"><img src="https://i.ytimg.com/vi/g_qPQNGcshU/hqdefault.jpg" alt="" loading="lazy"><span>Large Hammer in ONE Match: How to Get Level 8 Support</span></a>
+    <a class="video" href="https://www.youtube.com/watch?v=LoBaKtvkPBc"><img src="https://i.ytimg.com/vi/LoBaKtvkPBc/hqdefault.jpg" alt="" loading="lazy"><span>We Skipped the Base in WARDOGS. Everything Went Wrong</span></a>
+    <a class="video" href="https://www.youtube.com/watch?v=K94CUt8IEFg"><img src="https://i.ytimg.com/vi/K94CUt8IEFg/hqdefault.jpg" alt="" loading="lazy"><span>How to Build a Star Fort in Wardogs (and What Broke)</span></a>
+    <a class="video" href="https://www.youtube.com/watch?v=NOimJHwp7YY"><img src="https://i.ytimg.com/vi/NOimJHwp7YY/hqdefault.jpg" alt="" loading="lazy"><span>Building a Star Base in Wardogs, Start to Finish</span></a>
+  </div>
+  <p><a href="https://www.youtube.com/@bordemin/videos">All videos on YouTube →</a></p>
+</section>
+
+<section id="about">
+  <h2>About</h2>
+  <p>I'm borde. I build things in games and film how they hold up when real players attack them. The long videos are guides: one idea per build, shown working (or breaking) in a real match. The shorts are the best moments from those sessions, usually with my squad on voice.</p>
+  <p>Wardogs is the game while it is in early access. I stream on Twitch, and the community hangs out on Discord.</p>
+</section>
+
+<section id="follow">
+  <h2>Follow</h2>
+  <div class="links">
+    <a href="https://www.youtube.com/@bordemin?sub_confirmation=1">YouTube</a>
+    <a href="https://www.twitch.tv/bordemin">Twitch</a>
+    <a href="https://discord.gg/dn6hHyYqJu">Discord</a>
+    <a href="https://www.tiktok.com/@bordeminwastaken">TikTok</a>
+    <a href="https://www.instagram.com/bordeminwastaken">Instagram</a>
+    <a href="https://x.com/Bordemin">X</a>
+  </div>
+</section>
+
+<section id="tool">
+  <h2>The posting tool</h2>
+  <p><strong>bordemin pipeline</strong> is my own small tool. It posts my own finished short videos to my own accounts on TikTok, Instagram, Facebook and X, at the times I schedule, so each short goes out everywhere after it premieres on YouTube.</p>
+  <ul>
+    <li>It is used only by me, on my own accounts. Nobody else signs in to it.</li>
+    <li>It uploads a video and its caption, and reads back whether the post succeeded.</li>
+    <li>It does not read messages, followers or anyone else's data.</li>
+  </ul>
+  <p>Details: <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a></p>
+</section>
+
+<footer>
   <a href="privacy.html">Privacy Policy</a>
   <a href="terms.html">Terms of Service</a>
-</nav>
+  <span>© 2026 bordemin</span>
+</footer>
+
+</div>
 </body>
 </html>
